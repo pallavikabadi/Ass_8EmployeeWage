@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
 public class EmployeeWageProblem {
     public class EmployeeWage {
         int sal,id,total_sal;
