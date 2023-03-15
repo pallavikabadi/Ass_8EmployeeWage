@@ -1,26 +1,19 @@
 package com.bridgelabz;
 
 public class EmployeeWageProblem {
-
-        public static void Attendance() {
-
-            int employeeCheck = (int) ( (Math.random() * 10 )% 2);//using random function
-
-            if (employeeCheck == 1) {
-
-                System.out.println("Employee is present");
-
-            } else {
-
-                System.out.println("Employee is absent");
-            }
-
-
-
-        }
     public static void main(String[] args) {
-
-        System.out.println("Welcome to Employee Wage Computation");
-        Attendance();
+        int IS_FULL_TIME = 1;
+        int EMP_RATE_PER_HOUR = 20;
+        //variables
+        int empHrs = 0;
+        int empWage = 0;
+        //Computation
+        double empCheck = Math.floor(Math.random()*10)%2;
+        if (empCheck == IS_FULL_TIME)
+            empHrs = 8 ;
+        else
+            empHrs =0;
+        empWage = empHrs * EMP_RATE_PER_HOUR;
+        System.out.println("emp wage: "+empWage);
     }
 }
