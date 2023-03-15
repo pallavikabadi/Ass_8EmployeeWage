@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 public class EmployeeWageProblem {
-    public class EmployeeWage {
+   
         int sal,id,total_sal;
         String name;
         public void sal(int sal){
